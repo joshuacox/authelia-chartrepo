@@ -1550,6 +1550,11 @@ kubegres:
     replicationUserPassword: secret123
     myDbUserPassword: secret123
 
+openldap:
+  env:
+   LDAP_LOG_LEVEL: "256"
+   LDAP_ORGANISATION: "Example Inc."
+
 global:
   # openLDAP uses the global storageClass
   storageClass: "standard"
