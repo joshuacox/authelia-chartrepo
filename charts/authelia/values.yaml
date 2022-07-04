@@ -1541,8 +1541,8 @@ redis:
 kubegres:
   replicaCount: 3
   database:
-    name: synapsedb
-    user: synapseuser
+    name: autheliadb
+    user: autheliauser
     port: 5432
     size: 200Mi
     storageClassName: standard
