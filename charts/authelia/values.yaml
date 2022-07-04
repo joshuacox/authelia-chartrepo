@@ -1530,4 +1530,16 @@ persistence:
   size: 100Mi
 
   selector: {}
+
+kubegres:
+  replicaCount: 3
+  database:
+    name: synapsedb
+    user: synapseuser
+    port: 5432
+    size: 200Mi
+    storageClassName: standard
+    superUserPassword: secret123
+    replicationUserPassword: secret123
+    myDbUserPassword: secret123
 ...
