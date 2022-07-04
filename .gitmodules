@@ -1,6 +1,3 @@
 [submodule "charts/authelia/charts/redis"]
 	path = charts/authelia/charts/redis
 	url = https://github.com/spy86/redis.git
-[submodule "charts/authelia/charts/openldap"]
-	path = charts/authelia/charts/openldap-stack-ha
-	url = https://github.com/jp-gouin/helm-openldap.git
