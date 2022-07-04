@@ -1551,11 +1551,18 @@ kubegres:
     myDbUserPassword: secret123
 
 openldap:
+  ingress:
+    enabled: true
+    apiVersion: 1.20-0
   env:
    LDAP_LOG_LEVEL: "256"
    LDAP_ORGANISATION: "Example Inc."
 
 global:
-  # openLDAP uses the global storageClass
+  # openLDAP uses these global vars
   storageClass: "standard"
+  ldapDomain: "example.org"
+  ## Default Passwords to use, stored as a secret. Not used if existingSecret is set.
+  adminPassword: Not@SecurePassw0rd
+  configPassword: Not@SecurePassw0rd
 ...
