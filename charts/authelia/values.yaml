@@ -1531,6 +1531,13 @@ persistence:
 
   selector: {}
 
+redis:
+  namespace:
+    name: databases
+  redis:
+    auth:
+      enabled: no
+
 kubegres:
   replicaCount: 3
   database:
