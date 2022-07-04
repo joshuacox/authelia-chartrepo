@@ -1557,6 +1557,20 @@ openldap:
   env:
    LDAP_LOG_LEVEL: "256"
    LDAP_ORGANISATION: "Example Inc."
+  phpldapadmin:
+    enabled: true
+    env:
+      PHPLDAPADMIN_LDAP_CLIENT_TLS_REQCERT: "never"
+    ingress:
+      enabled: true
+      apiVersion: 1.20-0
+      annotations: {}
+      path: /
+      pathType: Prefix
+      ## Ingress Host
+      hosts:
+      - phpldapadmin.example
+     
 
 global:
   # openLDAP uses these global vars
