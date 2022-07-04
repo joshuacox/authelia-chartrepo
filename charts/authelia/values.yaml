@@ -1549,4 +1549,8 @@ kubegres:
     superUserPassword: secret123
     replicationUserPassword: secret123
     myDbUserPassword: secret123
+
+global:
+  # openLDAP uses the global storageClass
+  storageClass: "standard"
 ...
